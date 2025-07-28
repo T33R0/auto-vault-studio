@@ -61,7 +61,24 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				warehouse: {
+					steel: 'hsl(var(--warehouse-steel))',
+					concrete: 'hsl(var(--warehouse-concrete))',
+					accent: 'hsl(var(--warehouse-accent))',
+					warning: 'hsl(var(--warehouse-warning))',
+					success: 'hsl(var(--warehouse-success))'
 				}
+			},
+			backgroundImage: {
+				'gradient-warehouse': 'var(--gradient-warehouse)',
+				'gradient-tech': 'var(--gradient-tech)',
+				'gradient-steel': 'var(--gradient-steel)'
+			},
+			boxShadow: {
+				'warehouse': 'var(--shadow-warehouse)',
+				'tech': 'var(--shadow-tech)',
+				'elevated': 'var(--shadow-elevated)'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
