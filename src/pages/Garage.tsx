@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Plus, Eye, Wrench, Calendar } from "lucide-react";
+import { Plus, Wrench, Calendar } from "lucide-react";
 import { Link } from "react-router-dom";
 import vehicleImage1 from "@/assets/vehicle-1.jpg";
 import vehicleImage2 from "@/assets/vehicle-2.jpg";
@@ -125,10 +125,10 @@ const Garage = () => {
                 </div>
 
                 <div className="flex space-x-2">
-                  <Link to={`/vehicle/${vehicle.id}`} className="flex-1">
+                  <Link to={`/maintenance/${vehicle.id}`} className="flex-1">
                     <Button variant="outline" size="sm" className="w-full">
-                      <Eye className="w-4 h-4 mr-2" />
-                      View Details
+                      <Wrench className="w-4 h-4 mr-2" />
+                      Maintenance
                     </Button>
                   </Link>
                   <Link to={`/builds/${vehicle.id}`} className="flex-1">
